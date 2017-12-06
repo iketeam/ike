@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
 <addon id="plugin.video.quertv" name="QuerTv" version="1.0.1" provider-name="QuerTv">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -11,7 +10,7 @@
     <import addon="script.module.youtube.dl" optional="true"/>
     <import addon="plugin.video.youtube"/>
     <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson"/>
+    <import addon="script.module.simplejson"/> 
   </requires>
   <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
@@ -22,18 +21,3 @@
     <platform>all</platform>
   </extension>
 </addon>
-
-<addon id="repository.ike" name="[COLOR red][B]Ike.Repo[/B][/COLOR]" version="0.1" provider-name="[COLOR lime][B]IKE[/B][/COLOR]">
-	<extension point="xbmc.addon.repository" name="repository.ike">
-		<info compressed="false">https://raw.githubusercontent.com/iketeam/ike/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/iketeam/ike/master/addons.xml.md5</checksum>
-		<datadir zip="true">https://raw.githubusercontent.com/iketeam/ike/master/repo/</datadir>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<summary>[COLOR blue][B]Ike Repo[/B][/COLOR]</summary>
-		<description>[COLOR red][B]Ike.Repo[/B][/COLOR]</description>
-		<disclaimer></disclaimer>
-		<platform>all</platform>
-	</extension>
-</addon>
-</addons>
